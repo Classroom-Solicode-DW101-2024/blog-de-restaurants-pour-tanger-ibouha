@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Gestion des Restaurants</title>
+    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="assets/images/Untitled design (1) (1).png" alt="logo" />
+      </div>
+      <div class="sidebar-content">
+        <a href="./admin.html"><span><i class="fa-solid fa-utensils"></i></span>Restaurants</a>
+        <a href="./addRestaurant.html"
+          ><span><i class="fa-solid fa-plus"></i><i class="fa-solid fa-utensils"></i></span>Add Restaurant</a
+        >
+        <a href="/"><span><i class="fa-solid fa-globe"></i></span>View Website</a>
+      </div>
+    </aside>
+
+    <!-- Formulaire pour ajouter un restaurant -->
+    <main>
+      <section class="form-section">
+            <h2>Add a new Restaurant</h2>
+            <form id="restaurantForm">
+                <input type="hidden" id="restaurantId">
+                <label>Name :</label><input type="text" id="nom" required><br>
+                <label>Adress :</label><input type="text" id="adresse" required><br>
+                <label>Phone Number :</label><input type="text" id="telephone" required><br>
+                <label>Kitchen :</label><input type="text" id="cuisine" required><br>
+                <label>Picture (URL) :</label><input type="text" id="photo" required><br>
+                <label>Raiting :</label><input type="number" id="note" step="0.1" min="0" max="5" required><br>
+                <label>Website (URL) :</label><input type="url" id="site_web"><br>
+                <input type="submit">
+            </form>
+        </section>
+      
+    </main>
+
+    <script src="./addRestaurant.js"></script>
+  </body>
+</html>

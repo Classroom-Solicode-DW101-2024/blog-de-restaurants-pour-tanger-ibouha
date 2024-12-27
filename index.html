@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurants à Tanger</title>
+    <link rel="stylesheet" href="./client/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo-link" href="/">
+          <img
+            class="logo"
+            src="./client/assets/images/Untitled design (1) (1).png"
+            alt="Tripadvisor"
+          />
+        </a>
+        <ul class="nav-links">
+          <li class="nav-button" type="button">
+            <a href="#restaurant-list">Restaurants</a>
+          </li>
+          <li class="nav-button" type="button">
+            <a href="./client/trips.html">Trips</a>
+          </li>
+          <li class="nav-button" type="button">
+            <a href="./client/hotels.html">Hotels</a>
+          </li>
+        </ul>
+        <a class="profile-link" href="./client/admin.html">
+          <span>Admin Panel</span
+          ><img
+            class="profile-image"
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f0/d5/default-avatar-2020-17.jpg?w=100&amp;h=-1&amp;s=1"
+            alt="Profile picture"
+          />
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Find places to eat in Tanger</h1>
+      </section>
+      <section class="search-filter">
+        <input
+          type="text"
+          id="search"
+          placeholder="Rechercher un restaurant..."
+        />
+        <select id="filterCuisine">
+          <option value="">All types of cuisine</option>
+
+          
+        </select>
+      </section>
+      <section id="restaurant-list" class="restaurant-list"></section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="contact">
+          <h2>Contactez-nous</h2>
+          <a href="mailto:contact@example.com">contact@example.com</a>
+          <p>Tanger, Morocco</p>
+          <a href="tel:+216 55 555 555">+216 55 555 555</a>
+        </div>
+
+        <div class="social-media-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copyright"><img src="./client/assets/images/Copie de Sans titre.png" alt=""><p>&copy; 2024 Restaurants à Tanger. Tous droits réservés.</p></div>
+      </div>
+    </footer>
+    <script src="./client/index.js"></script>
+  </body>
+</html>
